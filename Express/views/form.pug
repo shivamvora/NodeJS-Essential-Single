@@ -1,0 +1,16 @@
+doctype html 
+html 
+ title #{title}
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+ body 
+  div.text-center
+    h1.h1.py-4 Simple Form 
+ div.container.text-center.w-25
+   form(method='POST',action='/form_submit') 
+     div.form-group
+       input(type='text',name='username',class='form-control',value="",placeholder='Enter Username')
+     div.form-group
+       input(type='text',name='email',class='form-control',value="",placeholder='Enter Email')
+     div.form-group
+       input(type='submit',class='btn btn-primary',value='Submit')
